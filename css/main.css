@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+:root {
+  --headingColor: hsl(217, 19%, 35%);
+  --textColor: hsl(214, 17%, 51%);
+  --gray-blue:hsl(212, 23%, 69%);
+  --bgColor: hsl(210, 46%, 95%);
+  --font-size: 13px;
+  --card-height: 280px;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+main, header, nav, section, article, footer,
+h1, h2, h3, h4, h5, h6, p {
+  padding: 0; margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--headingColor);
+}
+
+body {
+  background-color: var(--bgColor);
+  color: var(--textColor);
+  font-family: 'Manrope', sans-serif;
+  margin: 0; padding: 0;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.preview {
+  max-width: 45%;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px 1px hsla(212, 23%, 69%, 0.2);
+  display: flex;
+}
+
+.preview:hover {
+  cursor: pointer;
+  transition: 0.1s all ease-in-out;
+  transform: translate(-0.1em, -0.1em);
+  box-shadow: 5px 5px 10px 5px hsla(212, 23%, 69%, 0.5);
+}
+
+.preview-photo {
+  flex: 1;
+  overflow: hidden;
+  max-height: var(--card-height);
+  border-radius: 10px 0 0 10px;
+}
+
+.preview-photo img {
+  height: 100%;
+}
+
+.preview-content {
+  flex: 1.5;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 0 10px 10px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.preview-content .title {
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
+.preview-content .text {
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.preview-footer {
+  display: flex;
+  align-items: center;
+}
+
+.preview-footer .avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+
+.preview-footer > .author {
+  flex: 1;
+  padding-left: 1rem;
+}
+
+.preview-footer .author-name,
+.preview-footer .article-date {
+  font-size: 0.8rem;
+}
+
+.preview-footer .article-date {
+  color:hsla(212, 23%, 69%, 0.9);
+}
+
+.preview-footer .share-icon {
+  background-color: var(--bgColor);
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
