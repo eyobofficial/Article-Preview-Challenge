@@ -41,8 +41,8 @@ body {
 }
 
 .preview {
-  max-width: 45%;
-  margin: 0 auto;
+  max-width: 700px;
+  margin: 30px auto;
   border-radius: 10px;
   box-shadow: 3px 3px 3px 1px hsla(212, 23%, 69%, 0.2);
   display: flex;
@@ -120,4 +120,27 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+
+@media all and (max-width: 750px) {
+  .preview {
+    max-width: 320px;
+    margin: 20px auto;
+    flex-direction: column;
+  }
+
+  .preview .preview-photo {
+    border-radius: 10px 10px 0 0;
+    flex-basis: 200px;
+  }
+
+  .preview-photo img {
+    width: 100%;
+  }
+
+  .preview .preview-content {
+    border-radius: 0 0 10px 10px;
+    flex-basis: 350px;
+  }
 }
