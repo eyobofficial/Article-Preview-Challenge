@@ -143,4 +143,9 @@ body {
     border-radius: 0 0 10px 10px;
     flex-basis: 350px;
   }
+
+
+  .preview-content > .preview-footer {
+    padding-top: 1rem;
+  }
 }
