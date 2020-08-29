@@ -48,13 +48,6 @@ body {
   display: flex;
 }
 
-.preview:hover {
-  cursor: pointer;
-  transition: 0.1s all ease-in-out;
-  transform: translate(-0.1em, -0.1em);
-  box-shadow: 5px 5px 10px 5px hsla(212, 23%, 69%, 0.5);
-}
-
 .preview-photo {
   flex: 1;
   overflow: hidden;
@@ -120,8 +113,63 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.3s ease;
 }
 
+.preview-footer .share-icon:hover {
+  color: var(--gray-blue);
+}
+
+.preview {
+  position: relative;
+}
+
+.share-tooltip {
+  display: none;
+  position: absolute;
+  right: -2.8em;
+  bottom: 25%;
+}
+
+.tooltip-menu {
+  background-color: var(--headingColor);
+  box-shadow: 3px 3px 4px 1px hsla(212, 23%, 69%, 0.5);
+  border-radius: 10px;
+  color: #fff;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style-type: none;
+  padding: 0 28px;
+  min-width: 10em;
+}
+
+.tooltip-menu > li {
+  flex: 1;
+  padding: 10px 6px;
+}
+
+.tooltip-menu > li:first-child {
+  font-size: 0.7rem;
+  color: var(--gray-blue);
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+.tooltip-menu > li.icon {
+  cursor: pointer;
+}
+
+.tooltip-menu::after {
+  content: "\f0dd";
+  color: var(--headingColor);
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 36px;
+  position: absolute;
+  top: 0.9em;
+  text-shadow: 3px 3px 4px 1px hsla(212, 23%, 69%, 0.5);
+}
 
 @media all and (max-width: 750px) {
   .preview {
@@ -144,8 +192,11 @@ body {
     flex-basis: 350px;
   }
 
-
   .preview-content > .preview-footer {
     padding-top: 1rem;
+  }
+
+  .share-tooltip {
+    bottom: 13%;
   }
 }
