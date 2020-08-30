@@ -4,4 +4,4 @@
 
 This is my implementation of the `Article Preview Component` [challenge](https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT) from the [Frontend Mentor](https://www.frontendmentor.io) website.
 
-**You can check the live version of the web page [here](https://github.com/eyobofficial/article-preview-challenge).**
+**You can check the live version of the web page [here](https://eyobofficial.github.io/Article-Preview-Challenge/).**
