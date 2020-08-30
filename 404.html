@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Article Preview Challenge | Eyob Tariku</title>
+  <link rel="stylesheet" type="text/css" href="assets/fonts/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+</head>
+<body>
+  <div class="container">
+    <article class="preview">
+      <div class="preview-photo">
+        <img src="assets/images/drawers.jpg" alt="Article photo">
+      </div>
+      <div class="preview-content">
+        <h2 class="title">Shift the overall look and feel by adding these wonderful touches to furniture in your home</h2>
+        <p class="text">Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting.
+          I've got some simple tips to help you make any room feel complete.</p>
+        <div class="preview-footer">
+          <img src="assets/images/avatar-michelle.jpg" alt="Michelle Appleton" class="avatar">
+          <div class="author">
+            <h3 class="author-name">Michelle Appleton</h3>
+            <p class="article-date">28 Jun 20202</p>
+          </div>
+          <div class="share-icon">
+            <i class="fas fa-share"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Share button -->
+      <div class="share-tooltip">
+        <ul class="tooltip-menu">
+          <li>Share</li>
+          <li class="icon"><i class="fab fa-facebook-square"></i></li>
+          <li class="icon"><i class="fab fa-twitter-square"></i></li>
+          <li class="icon"><i class="fab fa-pinterest-square"></i></li>
+        </ul>
+      </div>
+    </article>
+  </div>
+  <script>
+    let showTooltip = false;
+    const button = document.querySelector('.share-icon');
+    const tooltip = document.querySelector('.share-tooltip');
+
+    button.addEventListener('click', () => {
+      showTooltip = !showTooltip;
+      tooltip.style.display = showTooltip ? 'block' : 'none';
+    });
+  </script>
+</body>
+</html>
