@@ -161,14 +161,13 @@ body {
 }
 
 .tooltip-menu::after {
-  content: "\f0dd";
-  color: var(--headingColor);
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-size: 36px;
+  content: '';
+  border-width: 12px;
+  border-style: solid;
+  border-color: var(--headingColor) transparent transparent transparent;
   position: absolute;
-  top: 0.9em;
-  text-shadow: 3px 3px 4px 1px hsla(212, 23%, 69%, 0.5);
+  top: 3.4em;
+  left: 45%;
 }
 
 @media all and (max-width: 750px) {
